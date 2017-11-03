@@ -1,0 +1,9 @@
+<workflow-app name="${crawl_id} Injector" xmlns="uri:oozie:workflow:0.4">
+    <!-- XML configurations from upper files would be overrided in case of conflict -->
+    <global>
+        <job-xml>cluster.xml</job-xml>
+        <job-xml>app.xml</job-xml>
+        <job-xml>env.xml</job-xml>
+    </global>
+    ...
+</workflow-app>

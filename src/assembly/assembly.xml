@@ -1,0 +1,23 @@
+<assembly>
+    <id>bundle</id>
+    <formats>
+        <format>dir</format>
+    </formats>
+    <includeBaseDirectory>true</includeBaseDirectory>
+    <fileSets>
+        <fileSet>
+            <directory>${project.build.directory}/conf</directory>
+            <outputDirectory>conf</outputDirectory>
+            <includes>
+                <include>**</include>
+            </includes>
+        </fileSet>
+        <fileSet>
+            <directory>src/main/resources/oozie</directory>
+            <outputDirectory>workspace</outputDirectory>
+            <includes>
+                <include>**</include>
+            </includes>
+        </fileSet>
+    </fileSets>
+</assembly>
